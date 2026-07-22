@@ -24,17 +24,11 @@ The project combines **electronics**, **embedded programming**, **hardware commu
 
 ## Video
 
-> Replace this image with your GIF or demo video.
+-> a venir
 
 <p align="center">
     <img src="assets/demo.gif" width="700">
 </p>
-
-Or add a YouTube link:
-
-```
-https://youtube.com/your-video
-```
 
 ---
 
@@ -172,7 +166,7 @@ PetPlant/
 ## Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/PetPlant.git
+git clone https://github.com/Lyseron/PetPlant.git
 ```
 
 ---
