@@ -224,8 +224,6 @@ Through this project I practiced:
 
 # 📷 Development Photos
 
-You can also include progress pictures.
-
 <p align="center">
     <img src="assets/dev1.jpg" width="250">
     <img src="assets/dev2.jpg" width="250">
