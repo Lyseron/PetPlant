@@ -7,14 +7,6 @@
 <p align="center">
     <strong>An interactive virtual plant powered by an ESP32.</strong><br>
     Monitor a real plant's environment using sensors and bring a digital companion to life on a TFT display.
-</p>
-
-<p align="center">
-    <img src="https://img.shields.io/badge/C%2B%2B-17-blue.svg">
-    <img src="https://img.shields.io/badge/ESP32-Microcontroller-red.svg">
-    <img src="https://img.shields.io/badge/Arduino-Framework-00979D.svg">
-    <img src="https://img.shields.io/badge/Status-Completed-success.svg">
-</p>
 
 ---
 
