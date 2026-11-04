@@ -1,4 +1,4 @@
-# 🌱 Pet Plant
+# Pet Plant
 
 <p align="center">
     <img src="assets/banner.png" alt="Pet Plant Banner" width="900">
@@ -10,7 +10,7 @@
 
 ---
 
-# 📖 About
+# About
 
 Pet Plant is an embedded systems project built around an **ESP32**.
 
@@ -20,7 +20,7 @@ The project combines **electronics**, **embedded programming**, **hardware commu
 
 ---
 
-# 🎥 Demonstration
+# Demonstration
 
 ## Video
 
@@ -32,7 +32,7 @@ The project combines **electronics**, **embedded programming**, **hardware commu
 
 ---
 
-# 📸 Gallery
+# Gallery
 
 ## Final Result
 
@@ -103,11 +103,11 @@ The project combines **electronics**, **embedded programming**, **hardware commu
 
 ---
 
-# ⚙️ How it Works
+# How it Works
 
 The ESP32 continuously reads data from its sensors.
 
-### 🌱 Soil Moisture
+### Soil Moisture
 
 The soil sensor determines whether the plant is:
 
@@ -119,7 +119,7 @@ The virtual plant reacts accordingly.
 
 ---
 
-### ☀️ Light Sensor
+### Light Sensor
 
 The photoresistor measures the surrounding brightness.
 
@@ -127,7 +127,7 @@ Depending on the light level, the virtual plant can react to indicate if it rece
 
 ---
 
-### 📺 TFT Display
+### TFT Display
 
 The display updates in real time by showing:
 
@@ -138,7 +138,7 @@ The display updates in real time by showing:
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```
 PetPlant/
@@ -161,40 +161,7 @@ PetPlant/
 
 ---
 
-# 🚀 Getting Started
-
-## Clone the repository
-
-```bash
-git clone https://github.com/Lyseron/PetPlant.git
-```
-
----
-
-## Open
-
-Open the project with the Arduino IDE.
-
----
-
-## Install Libraries
-
-Install:
-
-- Adafruit GFX
-- Adafruit ILI9341
-
----
-
-## Upload
-
-1. Connect the ESP32
-2. Select the correct COM port
-3. Upload the program
-
----
-
-# 🧠 What I Learned
+# What I Learned
 
 Through this project I practiced:
 
@@ -209,7 +176,7 @@ Through this project I practiced:
 
 ---
 
-# 🔮 Future Improvements
+# Future Improvements
 
 - 💧 Automatic watering system
 - 🔊 Sound effects
@@ -222,7 +189,7 @@ Through this project I practiced:
 
 ---
 
-# 📷 Development Photos
+# Development Photos
 
 <p align="center">
     <img src="assets/dev1.jpg" width="250">
@@ -232,15 +199,10 @@ Through this project I practiced:
 
 ---
 
-# ❤️ Why this project?
+# Why this project?
 
 I wanted to explore embedded programming through a fun and interactive project that combines software and hardware.
 
 Pet Plant helped me better understand how sensors, microcontrollers and graphical interfaces work together to create responsive embedded systems.
 
----
-
-# 📜 License
-
-This project is released under the MIT License.
 ````
