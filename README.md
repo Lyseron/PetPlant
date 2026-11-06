@@ -33,7 +33,7 @@ The circuit was designed in **Cirkit Designer** and assembled on a breadboard fo
 <table>
   <tr>
     <td width="55%" valign="top">
-      <img src="images/circuit_image.jpg" alt="Pet Plant circuit diagram created in Cirkit Designer" width="600">
+      <img src="images/circuit_image.png" alt="Pet Plant circuit diagram created in Cirkit Designer" width="600">
     </td>
     <td width="45%" valign="top">
       <strong>ESP32 wiring</strong>
