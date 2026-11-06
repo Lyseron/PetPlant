@@ -4,8 +4,6 @@
 
 // ------------------------------------------- DEFINE & VARIABLE ---------------------------------------------- //
 
-
-
 // ------------------------------------------- FUNCTION UTILS ------------------------------------------------- //
 
 void initDisplay()
@@ -16,36 +14,35 @@ void initDisplay()
   tft.setRotation(0);
   tft.fillScreen(ILI9341_BLACK);
 
-  // tft.setTextColor(ILI9341_GREEN);
-  // tft.setTextSize(3);
-  // tft.setCursor(35, 20);
-  // tft.print("Pet Plant");
-
   // Display sensor labels
   // Display the soil moisture label
-  tft.setTextColor(ILI9341_WHITE);
+  tft.setTextColor(ILI9341_PURPLE);
   tft.setTextSize(2);
-  tft.setCursor(15, 260);
-  tft.print("Humidity:");
+  tft.setCursor(15, 280);
+  tft.print("Soil:");
 }
 
 void displayHumidity()
 {
-  // Clear the previous humidity value
-  tft.fillRect(120, 255, 105, 25, ILI9341_BLACK);
+  // Remember the last displayed percentage
+  static int previousPercent = -1;
 
-  // Configure the text appearance
-  tft.setTextColor(ILI9341_CYAN);
+  // Avoid unnecessary screen updates
+  if (previousPercent == humidityPercent)
+    return;
+
+  previousPercent = humidityPercent;
+
+  // Clear previous icons and percentage
+  tft.fillRect(90, 254, 140, 30, ILI9341_BLACK);
+
+  // Display the humidity percentage
+  tft.setTextColor(ILI9341_WHITE);
   tft.setTextSize(2);
-
-  // Set the text position
-  tft.setCursor(120, 260);
-
-  // Display the soil moisture percentage
+  tft.setCursor(170, 280);
   tft.print(humidityPercent);
   tft.print("%");
 }
-
 
 void drawScaledSprite(const uint16_t* sprite, int x, int y, int scale)
 {

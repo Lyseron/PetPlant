@@ -24,6 +24,7 @@ Adafruit_ILI9341 tft(TFT_CS, TFT_DC, TFT_RST);
 #include "too_wet_sprites.h"
 #include "healthy_sprites.h"
 #include "thirsty_sprites.h"
+#include "sleeping_sprites.h"
 
 // -------------------- LIGHT SENSOR ------------------- //
 

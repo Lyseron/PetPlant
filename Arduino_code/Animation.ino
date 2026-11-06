@@ -17,7 +17,8 @@ enum PlantState
 {
   THIRSTY,
   HEALTHY,
-  TOO_WET
+  TOO_WET,
+  SLEEPING
 };
 
 // Animation phases
@@ -37,19 +38,23 @@ uint8_t displayedFrame = 0;
 
 // ------------------------------------------- FUNCTION UTILS ------------------------------------------------- //
 
-// Determine plant state based on soil moisture
+// Determine plant state based on soil moisture and light
 int getPlantState()
 {
   if (humidityPercent < 35)
-    return THIRSTY;
+    return (THIRSTY);
   else if (humidityPercent <= 65)
-    return HEALTHY;
+  {
+    if (lightValue < 400)
+      return (SLEEPING);
+    else if (lightValue > 600)
+      return (HEALTHY);
+  }
   else
-    return TOO_WET;
+    return (TOO_WET);
 }
 
 // Display a frame for the currently selected plant state
-
 void drawPlantFrame(uint8_t frameIndex)
 {
   // Draw the frame for the current plant state
@@ -57,15 +62,19 @@ void drawPlantFrame(uint8_t frameIndex)
   {
     case THIRSTY:
       displaySprite(frameIndex, THIRSTY_FRAMES);
-      break;
+      break ;
 
     case HEALTHY:
       displaySprite(frameIndex, HEALTHY_FRAMES);
-      break;
+      break ;
 
     case TOO_WET:
       displaySprite(frameIndex, TOO_WET_FRAMES);
-      break;
+      break ;
+
+    case SLEEPING:
+      displaySprite(frameIndex, SLEEPING_FRAMES);
+      break ;
   }
 
   // Remember the last displayed frame
@@ -106,7 +115,7 @@ void chooseSprite()
   if (currentPlantState == -1)
   {
     startAnimation(newState);
-    return;
+    return ;
   }
 
   unsigned long currentTime = millis();
@@ -117,12 +126,12 @@ void chooseSprite()
     // Start the exit animation
     animationPhase = EXITING;
     lastFrameTime = currentTime;
-    return;
+    return ;
   }
 
   // Wait until the next frame
   if (currentTime - lastFrameTime < frameInterval)
-    return;
+    return ;
 
   lastFrameTime = currentTime;
 
@@ -136,9 +145,7 @@ void chooseSprite()
 
     // Switch to IDLE when entering is finished
     if (currentFrame >= sizeof(enterSequence))
-    {
       animationPhase = IDLE;
-    }
   }
 
 // ---------------- IDLE ---------------- //
@@ -158,13 +165,9 @@ void chooseSprite()
   {
     // Return progressively to the first frame
     if (displayedFrame > 0)
-    {
       drawPlantFrame(displayedFrame - 1);
-    }
     else
-    {
       // Start the new animation after exiting
       startAnimation(getPlantState());
-    }
   }
 }
