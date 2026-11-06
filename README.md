@@ -167,22 +167,6 @@ PetPlant/
 └── README.md
 ```
 
-## Roadmap
-
-- [x] ESP32 and TFT communication
-- [x] Soil moisture sensor readings
-- [x] Light sensor input
-- [x] Hand-drawn sprites for three moisture states
-- [x] State-based animations and idle movement
-- [x] Breadboard prototype
-- [ ] Calibrate sensors with the final plant and soil
-- [ ] Add sleep/wake animations based on ambient light
-- [ ] Improve the TFT interface and sensor indicators
-- [ ] Build and solder the permanent prototype
-- [ ] Add a case or enclosure
-- [ ] Explore automatic watering (pump, relay, and separate suitable power supply)
-- [ ] Explore Wi-Fi monitoring and sensor history
-
 ## What I learned
 
 This project has helped me practice **embedded C++**, analog sensor readings, SPI communication, TFT graphics, timing with `millis()`, pixel-art asset conversion, modular code organization, and hardware prototyping.
