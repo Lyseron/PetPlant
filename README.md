@@ -62,27 +62,48 @@ The circuit was designed in **Cirkit Designer** and assembled on a breadboard fo
 All plant sprites were **drawn by hand in Piskel**. Each animation consists of four unique **42 × 42 px frames**, exported as a **168 × 42 px spritesheet**. For the ESP32, the frames are converted into RGB565 arrays and rendered at **5× scale** (210 × 210 px) to keep the pixel-art look sharp.
 
 
-<p align="center">
-  <img src="images/Thirsty.png" alt="Hand-drawn Thirsty plant spritesheet" width="740">
-  <br>
-<br>
-  <strong>Thirsty — The plant needs water</strong>
+<p>
+  <strong>Thirsty — The plant needs water:</strong>
+   <br>
+    <br>
+  <img src="images/Thirsty.png" alt="Hand-drawn Thirsty plant spritesheet" width="740"> 
 </p>
 
-<p align="center">
+<p>
+  <strong>Healthy — The plant is happy and healthy:</strong>
+   <br>
+    <br>
   <img src="images/Healthy.png" alt="Hand-drawn Healthy plant spritesheet" width="740">
-  <br>
-    <br>
-  <strong>Healthy — The plant is happy and healthy</strong>
+  
 </p>
 
-<p align="center">
+<p>
+   <strong>Too Wet — The plant has received too much water:</strong>
+   <br>
+    <br>
   <img src="images/Too_wet.png" alt="Hand-drawn Too Wet plant spritesheet" width="740">
-  <br>
-    <br>
-  <strong>Too Wet — The plant has received too much water</strong>
 </p>
 
+<p>
+  <strong>Too Sleep — The plant is sleeping:</strong>
+   <br>
+    <br>
+  <img src="images/Sleep.png" alt="Hand-drawn sleeping plant spritesheet" width="740">
+</p>
+
+<p>
+  <strong>Too Love — The plant is happy:</strong>
+   <br>
+    <br>
+  <img src="images/Love.png" alt="Hand-drawn Love plant spritesheet" width="740">
+</p>
+
+<p>
+  <strong>Blink — The plant is blinking:</strong>
+  <br>
+    <br>
+  <img src="images/Blink.png" alt="Hand-drawn Blinking plant spritesheet" width="740">
+</p>
 
 ### Animation behavior
 
@@ -166,7 +187,7 @@ PetPlant/
 
 This project has helped me practice **embedded C++**, analog sensor readings, SPI communication, TFT graphics, timing with `millis()`, pixel-art asset conversion, modular code organization, and hardware prototyping.
 
-## 💚 Why I built Pet Plant
+## Why I built Pet Plant
 
 I wanted to combine electronics and creative programming in a project that feels alive. Pet Plant turns environmental measurements into a small animated companion while giving me a practical way to learn how sensors, microcontrollers, and graphics work together.
 
