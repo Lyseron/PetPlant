@@ -73,8 +73,8 @@ I'm still learning and improving, so they might not be perfect yet. All sprites 
 
 | State | Sprite Sheet | Animation GIF |
 |:---:|:---:|:---:|
-| 💧 Thirsty | <img src="images/Thirsty.png" width="500" alt="Thirsty plant sprite sheet"> | <img src="images/Thirsty.gif" width="120" alt="Thirsty plant animation"> |
 | 🌿 Healthy | <img src="images/Healthy.png" width="500" alt="Healthy plant sprite sheet"> | <img src="images/Healthy.gif" width="120" alt="Healthy plant animation"> |
+| 💧 Thirsty | <img src="images/Thirsty.png" width="500" alt="Thirsty plant sprite sheet"> | <img src="images/Thirsty.gif" width="120" alt="Thirsty plant animation"> |
 | 🌧️ Too Wet | <img src="images/Too_wet.png" width="500" alt="Overwatered plant sprite sheet"> | <img src="images/Too_wet.gif" width="120" alt="Overwatered plant animation"> |
 | 😴 Sleeping | <img src="images/Sleep.png" width="500" alt="Sleeping plant sprite sheet"> | <img src="images/Sleep.gif" width="120" alt="Sleeping plant animation"> |
 | 💕 Love | <img src="images/Love.png" width="500" alt="Happy plant sprite sheet"> | <img src="images/Love.gif" width="120" alt="Happy plant animation"> |
