@@ -61,49 +61,25 @@ The circuit was designed in **Cirkit Designer** and assembled on a breadboard fo
 
 All plant sprites were **drawn by hand in Piskel**. Each animation consists of four unique **42 × 42 px frames**, exported as a **168 × 42 px spritesheet**. For the ESP32, the frames are converted into RGB565 arrays and rendered at **5× scale** (210 × 210 px) to keep the pixel-art look sharp.
 
+## 🌱 Plant Sprite Showcase
 
-<p>
-  <strong>Thirsty — The plant needs water:</strong>
-   <br>
-    <br>
-  <img src="images/Thirsty.png" alt="Hand-drawn Thirsty plant spritesheet" width="740"> 
-</p>
+### 🚧 Work in Progress
 
-<p>
-  <strong>Healthy — The plant is happy and healthy:</strong>
-   <br>
-    <br>
-  <img src="images/Healthy.png" alt="Hand-drawn Healthy plant spritesheet" width="740">
-  
-</p>
+These are my second attempts at creating pixel art and animations! 🎨
 
-<p>
-   <strong>Too Wet — The plant has received too much water:</strong>
-   <br>
-    <br>
-  <img src="images/Too_wet.png" alt="Hand-drawn Too Wet plant spritesheet" width="740">
-</p>
+I'm still learning and improving, so they might not be perfect yet. All sprites and animations are a work in progress! ✨
 
-<p>
-  <strong>Too Sleep — The plant is sleeping:</strong>
-   <br>
-    <br>
-  <img src="images/Sleep.png" alt="Hand-drawn sleeping plant spritesheet" width="740">
-</p>
+### 🌿 Plant Animations
 
-<p>
-  <strong>Too Love — The plant is happy:</strong>
-   <br>
-    <br>
-  <img src="images/Love.png" alt="Hand-drawn Love plant spritesheet" width="740">
-</p>
+| State | Sprite Sheet | Animation GIF |
+|:---:|:---:|:---:|
+| 💧 Thirsty | <img src="images/Thirsty.png" width="500" alt="Thirsty plant sprite sheet"> | <img src="images/Thirsty.gif" width="120" alt="Thirsty plant animation"> |
+| 🌿 Healthy | <img src="images/Healthy.png" width="500" alt="Healthy plant sprite sheet"> | <img src="images/Healthy.gif" width="120" alt="Healthy plant animation"> |
+| 🌧️ Too Wet | <img src="images/Too_wet.png" width="500" alt="Overwatered plant sprite sheet"> | <img src="images/Too_wet.gif" width="120" alt="Overwatered plant animation"> |
+| 😴 Sleeping | <img src="images/Sleep.png" width="500" alt="Sleeping plant sprite sheet"> | <img src="images/Sleep.gif" width="120" alt="Sleeping plant animation"> |
+| 💕 Love | <img src="images/Love.png" width="500" alt="Happy plant sprite sheet"> | <img src="images/Love.gif" width="120" alt="Happy plant animation"> |
+| 👀 Blink | <img src="images/Blink.png" width="500" alt="Blinking plant sprite sheet"> | <img src="images/Blink.gif" width="120" alt="Blinking plant animation"> |
 
-<p>
-  <strong>Blink — The plant is blinking:</strong>
-  <br>
-    <br>
-  <img src="images/Blink.png" alt="Hand-drawn Blinking plant spritesheet" width="740">
-</p>
 
 ### Animation behavior
 
